@@ -66,12 +66,7 @@ data = remove_outliers_iqr(data, numeric_columns)
 
 data['speed'] = data['speed'] * 3.6
 
-# Шаг 4: Удаление дубликатов
-# data.drop_duplicates(inplace=True)
 
-# Шаг 5: Нормализация числовых данных
-# scaler = MinMaxScaler()
-# data[numeric_columns] = scaler.fit_transform(data[numeric_columns])
 
 # Шаг 6: Сохранение результата
 output_file = 'normalized_tracks_december.csv'
